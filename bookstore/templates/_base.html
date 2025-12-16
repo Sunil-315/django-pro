@@ -39,6 +39,10 @@ gle navigation">
                 </li>
                 {% endif %}
             </ul>
+            <form class="d-flex" action="{% url 'search_results' %}" method="get" >
+                <input type="search" class="form-control me-2" name="q" placeholder="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
         </div>
     </div>
 </nav>
